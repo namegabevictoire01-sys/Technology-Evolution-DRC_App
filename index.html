@@ -1,0 +1,148 @@
+here<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology Evolution DRC — Espace Client</title>
+    <!-- Chargement des icônes professionnelles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Barre de Navigation Principale -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <i class="fa-solid fa-microchip"></i> TECHNOLOGY EVOLUTION DRC
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#services"><i class="fa-solid fa-gears"></i> Solutions</a></li>
+                    <li><a href="#tracking"><i class="fa-solid fa-chart-line"></i> Suivi</a></li>
+                    <li><a href="#support"><i class="fa-solid fa-bolt"></i> Assistance</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section Héro / Accueil -->
+    <section class="hero-section">
+        <h1>Votre Partenaire en Ingénierie & Solutions Industrielles</h1>
+        <p>Suivez vos projets d'automatisation, de maintenance et de sécurité connectée en temps réel.</p>
+        <a href="#tracking" class="btn-primary">Accéder à mon tableau de bord</a>
+    </section>
+
+    <main class="content-container">
+
+        <!-- 1. Section Catalogue de Solutions Industrielles -->
+        <section id="services" class="services-section">
+            <div class="section-title">
+                <h2><i class="fa-solid fa-industry"></i> Nos Domaines d'Intervention</h2>
+                <p>Des technologies avancées adaptées aux exigences de vos infrastructures.</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Carte 1: Électrotechnique -->
+                <div class="service-card">
+                    <div class="card-icon"><i class="fa-solid fa-bolt-lightning"></i></div>
+                    <h3>Maintenance Électrotechnique</h3>
+                    <p>Essais de charge sur transformateurs et tests de résistance d'isolement pour moteurs asynchrones triphasés.</p>
+                </div>
+
+                <!-- Carte 2: IoT & Automation -->
+                <div class="service-card">
+                    <div class="card-icon"><i class="fa-solid fa-robot"></i></div>
+                    <h3>Systèmes Automatisés & IoT</h3>
+                    <p>Déploiement de modules d'irrigation intelligents, capteurs de sol de précision et programmation de relais automatisés.</p>
+                </div>
+
+                <!-- Carte 3: Sécurité Biométrique -->
+                <div class="service-card">
+                    <div class="card-icon"><i class="fa-solid fa-fingerprint"></i></div>
+                    <h3>Sécurité Électronique</h3>
+                    <p>Contrôle d'accès avancé et intégration de verrous biométriques industriels ou résidentiels.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Section Suivi de Projet en Temps Réel -->
+        <section id="tracking" class="tracking-section">
+            <div class="section-title">
+                <h2><i class="fa-solid fa-square-poll-vertical"></i> Suivi de vos Installations</h2>
+                <p>Visualisez l'état d'avancement des interventions de nos techniciens.</p>
+            </div>
+
+            <div class="tracking-dashboard">
+                <div class="project-status-box">
+                    <div class="status-header">
+                        <h3>Dépôt Industriel — Configuration Automate</h3>
+                        <span class="status-badge processing">En cours</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 75%;">75%</div>
+                    </div>
+                    <ul class="steps-list">
+                        <li class="step-done"><i class="fa-solid fa-circle-check"></i> Étape 1 : Analyse des plans électriques et d'isolation</li>
+                        <li class="step-done"><i class="fa-solid fa-circle-check"></i> Étape 2 : Câblage et montage des cartes de développement</li>
+                        <li class="step-current"><i class="fa-solid fa-spinner fa-spin"></i> Étape 3 : Tests des relais intelligents et calibration des capteurs</li>
+                        <li class="step-pending"><i class="fa-solid fa-circle-dot"></i> Étape 4 : Livraison finale et recette technique</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Section Assistance / Support Client Rapide -->
+        <section id="support" class="support-section">
+            <div class="section-title">
+                <h2><i class="fa-solid fa-headset"></i> Support Technique & Demande de Devis</h2>
+                <p>Un problème technique ou un nouveau projet ? Contactez immédiatement nos ingénieurs.</p>
+            </div>
+
+            <div class="form-container">
+                <form action="#" method="POST" class="professional-form">
+                    <div class="form-group-inline">
+                        <div class="form-group">
+                            <label for="client-name">Nom complet ou Entreprise</label>
+                            <input type="text" id="client-name" name="name" placeholder="Ex: Snel, Usine Bralima..." required>
+                        </div>
+                        <div class="form-group">
+                            <label for="client-email">Adresse Email professionnelle</label>
+                            <input type="email" id="client-email" name="email" placeholder="client@domaine.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service-type">Type d'intervention</label>
+                        <select id="service-type" name="service_type" required>
+                            <option value="" disabled selected>Sélectionnez un domaine</option>
+                            <option value="maintenance">Maintenance Électrique Industrielle</option>
+                            <option value="automation">Automation / Prototype IoT (Arduino)</option>
+                            <option value="security">Sécurité Connectée / Biométrie</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Description détaillée de votre besoin</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Spécifiez la panne, le type de moteur, ou le système automatisé requis..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">
+                        <i class="fa-solid fa-paper-plane"></i> Soumettre la demande technique
+                    </button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="main-footer">
+        <div class="footer-bottom">
+            <p>&copy; 2026 <strong>Technology Evolution DRC</strong>. Tous droits réservés.</p>
+            <p>Solutions d'Ingénierie, d'Électricité Industrielle & de Domotique Avancée.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
